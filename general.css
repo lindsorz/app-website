@@ -1,0 +1,27 @@
+html {
+	min-width: 240px;
+	max-width: 600px;
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	background: url(img/raspberry-background.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.logo {
+	max-width: 20%;
+	display: inherit;
+	padding-bottom: 10px;
+}
+
+.video {
+	display: inline-block;
+}
+
+.description {
+	max-width: 50%;
+	display: inline-block;
+	
+}
