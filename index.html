@@ -3,16 +3,23 @@
 <head>
 	<meta charset="utf-8">
 	<title>App Website</title>
-	<link href="general.css" rel="stylesheet">
+	<link href="css/jquery.fancybox.css" rel="stylesheet">
+	<link href="css/general.css" rel="stylesheet">
 </head>
 <body>
 	<img class="logo" src="img/mh-logo.svg">
-	<img class="video" src="http://placehold.it/200x200">
+	
+	<dialog>
+		<div class="video"></div>
+	</dialog>	
+	
 	<div class="description">
+		<img src="http://placehold.it/200x200">
 		<h2>Meal Helper</h2>
 		<p>Hungry? Have food in the fridge but you don't know what to make? Meal Helper is here for you!</p>
-		<button id="">Buy Now</button>
+		<a class="buy-now" href="https://play.google.com/store?hl=en">Buy Now</a>
 	</div>
+	
 	<div class="carousel">
 		<div class="items">
 			<img data-state="current" src="img/phone-1.jpg" alt="">
@@ -25,10 +32,12 @@
 			<button class="next">Next</button>
 			<button class="previous">Previous</button>
 		</div>
-	</div>			
+	</div>	
+			
 
 
 	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src="js/dialog-polyfill.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>	
