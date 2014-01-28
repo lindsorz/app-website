@@ -1,30 +1,47 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
 html {
-  min-width: 240px;
-  max-width: 600px;
-  padding-left: 10px;
-  color: #FFF;
-  font-family: Arial, Helvetica, sans-serif;
-  background: url(../img/raspberry-background.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	min-width: 200px;
+	padding-left: 10px;
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	background: url(../img/raspberry-background.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+		padding-left: 10%;
+		padding-right: 10%;
 }
 
 .logo {
-  max-width: 20%;
-  display: inherit;
-  padding-bottom: 10px;
+	max-width: 150px;
+	display: inherit;
+	padding-bottom: 10px;
+}
+
+.btn-open img{
+	min-width: 215px;
+	max-width: 40%;
+	display: inline-block;
 }
 
 .video {
-  display: inline-block;
+	display: inline-block;
 }
 
 .description {
-  max-width: 50%;
-  display: inline-block;
-  padding-left: 5px;
+	min-width: 215px;
+	width: 50%;
+	display: inline-block;
+	padding-left: 5%;
 }
 
 .buy-now {
@@ -44,6 +61,7 @@ html {
 }
 
 .carousel {
+	min-width: 215px;
 	position: relative;
 	padding-bottom: 54.6%;
 	margin-top: 5%;
@@ -67,4 +85,34 @@ html {
 
 .carousel [data-state="incoming"] {
 	z-index: 100;
+}
+
+.next {
+	background-color: transparent;
+	border: 0;
+	background-image: url(../img/left-btn.png);
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	text-indent: 100%;
+	padding: 0;
+}
+
+.previous {
+	background-color: transparent;
+	border: 0;
+	background-image: url(../img/right-btn.png);
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	text-indent: 100%;
+	padding: 0;
+}
+
+@media only screen and (min-width: 37.75em) {
+	html {
+		min-width: 600px;	
+	}
+	
+	
 }
