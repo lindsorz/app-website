@@ -109,6 +109,56 @@ body {
 	padding: 0;
 }
 
+.cupcakes {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+.cupcakes li {
+	display: inline-block;
+	margin: 0 2rem;
+}
+
+.cupcakes img {
+	width: 140px;
+	opacity: 0;
+	-webkit-transform: translateY(140px);
+}
+
+.js-cupcakes-animate {
+	-webkit-animation: cupcakes-fly 1s ease-out 1 forwards;
+}
+
+@-webkit-keyframes cupcakes-fly {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(140px);
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+.js-cupcake-delay-1 {
+	-webkit-animation-delay: 100ms;
+}
+
+.js-cupcake-delay-2 {
+	-webkit-animation-delay: 200ms;
+}
+
+.js-cupcake-delay-3 {
+	-webkit-animation-delay: 250ms;
+}
+
+
+
 @media only screen and (min-width: 37.75em) {
 	html {
 		min-width: 600px;	

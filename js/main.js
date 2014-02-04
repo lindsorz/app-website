@@ -57,3 +57,20 @@ $('.btn-close').on('click', function (){
 	$videoDialog.get(0).close();
 	$videoDialog.children('.video').html('');
 });
+
+var $win = $(window);
+var $logo = $('.logo');
+
+$win.on('scroll', function () {
+	//consol.log($win.scrollTop());
+	$logo.css('transform', 'rotate(' + $win.scrollTop() / 5 + 'deg)');
+});
+
+var $cupcakes = $('.cupcakes img');
+
+$('.cupcakes-section').waypoint(function () {
+	$cupcakes.eq(0).addClass('js-cupcake-delay-1');
+	$cupcakes.eq(2).addClass('js-cupcake-delay-3');
+	$cupcakes.eq(3).addClass('js-cupcake-delay-2');
+	$cupcakes.addClass('js-cupcakes-animate');
+}, { offset: '60%' });
